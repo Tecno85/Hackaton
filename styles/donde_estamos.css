@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Share+Tech&display=swap");
+
+/* Archivo: styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Aqui inicia el diseño para el header*/
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.text-content {
+    position: relative;
+    z-index: 3;
+    padding-left: 30px;
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+    line-height: 2rem;
+}
+
+.highlight {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #f7c02d; 
+}
+
+/*Aqui inicia el diseño del main*/
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center;    /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center;      /* Centra el texto */
+    padding: 50px 20px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en la altura total */
+}
+
+.icon img {
+    width: 80px; /* Tamaño del ícono */
+    height: auto;
+    margin-bottom: 20px;
+    transition: width 0.3s ease;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #333;
+    font-family: "Share Tech", sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Aqui inicia el diseño del section*/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap; 
+    background-color: #000; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    text-align: center; 
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    gap: 15px; 
+}
+
+.section-title {
+    font-size: 2rem;
+    color: white; 
+    margin-bottom: 10px; 
+    font-weight: bold;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); 
+} 
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 0 2rem;
+    padding: 1.5rem 3rem;
+  }
+  
+  .image_name {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid white; */
+  }
+  
+  .imagen_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    /* border: 1px solid white; */
+  }
+  
+  .name_fundation_footer {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 1rem;
+    font-weight: 600;
+    /* border: 1px solid white; */
+    margin-left: 0rem;
+    padding: 0rem;
+  }
+  
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen_phone {
+    padding-right: 0.5rem;
+  }
+  
+  .parrafo_imagen_phone {
+    font-family: "Share Tech", sans-serif;
+  }
+  
+  .celphone p {
+    font-family: "Share Tech", sans-serif;
+  }
+  
+  .direccion p {
+    font-family: "Share Tech", sans-serif;
+  }
+  
+  .redes_sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes_sociales img {
+    padding: 0.5rem;
+  }
+
+
+
+
+

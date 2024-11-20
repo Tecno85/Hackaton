@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Share+Tech&display=swap");
+
+body {
+    font-family: "Share Tech", sans-serif;
+    font-size: 18px;
+
+}
+
+/* Head */
+.sidebar {
+    margin: 3rem 3rem 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    /* border: 2px solid black; */
+}
+
+.image_name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid blueviolet; */
+}
+
+.imagen_sidebar {
+    /* border: 1px solid black; */
+    margin: 0.3rem;
+}
+
+.name_fundation {
+    /* border: 1px solid black; */
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.3rem;
+}
+
+.enlaces_boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces a {
+    /* border: 1px solid black; */
+    margin: 1rem;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    color: orangered;
+    font-weight: 590;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(12, 151, 12);
+    cursor: url(img/icon_cursor_5.png), auto;
+}
+
+.boton {
+    border: 1px solid black;
+    margin-right: 2.5rem;
+    margin-left: 3rem;
+    padding: 0.3rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    /* background-color: orangered; */
+    /* color: aliceblue; */
+}
+
+/* head */
+
+.img_fondo {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/fondoQuienesSomos.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+}
+
+.img_fondo div {
+    margin-left: 70px;
+}
+
+.texto_img {
+    max-width: 250px;
+    color: white;
+}
+
+.img_fondo h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    color: white;
+}
+
+.img_fondo p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    line-height: 2.5;
+}
+
+.segundo_contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundo_contenedor p {
+    text-align: justify;
+    line-height: 2;
+    width: 800px;
+    margin-bottom: 4rem;
+}
+
+.segundo_contenedor h1 {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+.segundo_contenedor img {
+    margin-top: 2rem;
+}
+
+section {
+    height: 20px;
+    border-radius: 5px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 0 2rem;
+    padding: 1.5rem 3rem;
+}
+
+.image_name {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.imagen_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    /* border: 1px solid white; */
+}
+
+.name_fundation_footer {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 1rem;
+    font-weight: 600;
+    /* border: 1px solid white; */
+    margin-left: 0rem;
+    padding: 0rem;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_phone {
+    padding-right: 0.5rem;
+}
+
+.parrafo_imagen_phone {
+    font-family: "Share Tech", sans-serif;
+}
+
+.celphone p {
+    font-family: "Share Tech", sans-serif;
+}
+
+.direccion p {
+    font-family: "Share Tech", sans-serif;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_sociales img {
+    padding: 0.5rem;
+}

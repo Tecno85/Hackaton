@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/style_form.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/icon_favicon.png"
+    />
+    <title>Donaciones</title>
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <div class="padre">
+      <div class="meta_display">
+        <div class="metainfo_display" id="pulsing-div">
+          <h3>Nuestra meta</h3>
+          <p>$50000</p>
+        </div>
+        <div class="acomulado_display">
+          <h1>Acumulado: $0</h1>
+        </div>
+      </div>
+      <div id="goal-message"></div>
+      <div class="donation-container">
+        <h2 class="donation-title">¡Hola! Gracias por visitarnos</h2>
+        <h1>Dona hoy</h1>
+        <p>
+          Si deseas ayudar puedes hacerlo a traves de un donativo.<br />
+          Cada contribución nos ayudará a llegar a más personas.
+        </p>
+
+        <form class="donation-form">
+          <div class="name-input">
+            <label for="donor-name">Nombre</label>
+            <input
+              type="text"
+              id="donor-name"
+              name="donor-name"
+              title="Ingresa tu nombre"
+              min="5"
+              aria-describedby="usernameHelp"
+            />
+          </div>
+
+          <div class="amount-input">
+            <label for="donation-amount">$</label>
+            <input
+              type="number"
+              id="donation-amount"
+              name="donation-amount"
+              value="25"
+              min="1"
+            />
+          </div>
+
+          <div class="preset-amounts">
+            <button type="button">$25</button>
+            <button type="button">$100</button>
+            <button type="button">$250</button>
+            <button type="button">$1,000</button>
+            <button type="button">Personalizado</button>
+          </div>
+
+          <!-- Div para el mensaje dinámico -->
+          <div id="donation-message" class="hidden"></div>
+
+          <button type="submit" class="donate-button">Donar ahora</button>
+        </form>
+      </div>
+      <!------------------------------------------->
+      <!-----------lista de donantes---------------->
+
+      <div class="list">
+        <h2>Lista Donantes</h2>
+        <div id="donor-list">
+          <ul id="donors">
+            <!-- Los nombres de los donantes aparecerán aquí -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="show_hiden">
+        <button id="toggle_div">Mostrar/Ocultar Donantes</button>
+      </div>
+      <!------------------------------------------->
+    </div>
+
+    <script src="../script/script.js" defer></script>
+  </body>
+</html>

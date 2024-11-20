@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #5aa89e;
+}
+.padre {
+  height: 10000px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*-----display meta------*/
+.meta_display {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta_display div {
+  margin: 60px;
+  border-radius: 10px;
+  border: transparent;
+  color: white;
+  background-color: #5aa89e;
+  animation: pulse 1.5s infinite; /* Asignar animación */
+}
+/*Animación */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta el tamaño */
+    opacity: 0.9; /* Reduce opacidad */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño original */
+    opacity: 1; /* Restaura opacidad */
+  }
+}
+
+.metainfo_display {
+  width: 250px;
+  height: 100px;
+  border: solid 1px;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.metainfo_display h3 {
+  margin: 0px;
+  font-size: 30px;
+  position: relative;
+}
+.metainfo_display p {
+  font-size: 18;
+  margin-bottom: 5px;
+  color: white;
+}
+.acomulado_display {
+  width: 250px;
+  height: 100px;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*-----Fin display meta------*/
+/*----mensaje de meta alcanzada----*/
+#goal-message {
+  width: 420px;
+  height: 120px;
+  padding: 10px;
+  border: transparent;
+  border-radius: 10px;
+  display: none;
+  color: black;
+  font-weight: bold;
+  position: fixed; /* Fijo en la pantalla */
+  top: 25%; /* Centrado verticalmente */
+
+  transform: translate(-50%, -50%); /*  para centrar */
+  background-color: #31e4cf;
+  animation: pulse 1.5s infinite; /* Asignar animación */
+}
+.donstion-form {
+  margin-top: 70px;
+}
+/* Container */
+.donation-container {
+  width: 100%;
+  padding: 20px 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  background-color: white;
+}
+
+/* Titles and Text */
+.donation-title {
+  color: #ff6600;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Amount Input */
+.name-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.name-input label {
+  background-color: #eee;
+  padding: 10px;
+  font-weight: bold;
+}
+.name-input input {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+.amount-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.amount-input label {
+  background-color: #eee;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.amount-input input {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Preset Amount Buttons */
+.preset-amounts {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.preset-amounts button {
+  background-color: #5aa89e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.preset-amounts button:hover {
+  background-color: #497f76;
+}
+
+/*------------------*/
+
+/* Mensaje de confirmación */
+#donation-message {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+  /* Oculto por defecto */
+}
+
+#donation-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#donation-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Donate Button */
+.donate-button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+  background-color: #005f56;
+}
+/*------Fin form-------------*/
+/*-----------lista de donantes----------------*/
+.list {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  margin-top: 40px;
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(220, 240, 239);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#donor-list {
+  text-align: center;
+}
+ul {
+  padding-left: 20px;
+}
+ul li {
+  list-style: none;
+  font-size: 18px;
+  border: transparent;
+  border-radius: 10px;
+  padding: 5px 25px;
+  margin-top: 5px;
+  color: rgb(75, 65, 65);
+  background-color: rgb(147, 235, 241);
+}
+.show_hiden {
+  margin-top: 20px;
+}
+.show_hiden button {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: transparent;
+  font-size: 18px;
+  color: white;
+  background-color: #00796b;
+}
+.show_hiden button:hover {
+  width: 270px;
+  padding: 12px;
+  border-radius: 10px;
+  border: transparent;
+  font-size: 18px;
+  color: white;
+  background-color: #24b4a3;
+}
+
+/*-----------Fin lista de donantes----------------*/
