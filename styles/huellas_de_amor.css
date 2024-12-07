@@ -6,6 +6,17 @@
   /* font-family: "Share Tech", sans-serif; */
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 /* Head */
 .sidebar {
   margin: 3rem 3rem 1.5rem 3rem;
@@ -46,7 +57,7 @@
   margin: 1rem;
   padding: 0.3rem;
   font-size: 1.1rem;
-  color: orangered;
+  color: rgb(25, 27, 25);
   font-weight: 590;
   text-decoration: none;
 }
@@ -91,6 +102,7 @@ a:hover {
   font-family: "Share Tech", sans-serif;
   margin-bottom: 2rem;
   line-height: 1.6rem;
+  color: rgb(25, 27, 25);
   /* border: 1px solid black; */
 }
 
@@ -133,6 +145,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   /* border: 1px solid white; */
 }
 
